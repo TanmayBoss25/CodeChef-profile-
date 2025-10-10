@@ -4,9 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code chef profile-Tanmay</title>
+    <title>CodeChef Profile - Tanmay</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             background: linear-gradient(to right, #08123c, #1500b3, #08123c);
             font-family: 'Roboto', sans-serif;
@@ -15,66 +20,98 @@
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
+            margin: 0;
+            padding: 20px;
         }
 
         .profile-pic {
-            width: 200px;
-            height: 200px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
-            border: 5px solid #58a6ff;
-            /* background-image: url('https://avatars.githubusercontent.com/u/104955634?v=4'); */
+            border: 4px solid #58a6ff;
             background-image: url('download.jpeg');
             background-size: cover;
             background-position: center;
-            margin: auto;
             box-shadow: 0 10px 30px rgba(72, 164, 255, 0.879);
-            transform: translateX(-500px) translateY(30px);
+            margin: 40px auto 20px auto;
         }
 
         .profile-info {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-            max-width: 600px;
-            width: 800px;
-            height: 150px, 0px;
-            padding: 50px;
+            max-width: 800px;
+            width: 90%;
+            padding: 30px;
             background-color: #249cff;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(97, 181, 255, 0.803);
             text-align: center;
-            transform: translateY(-200px) translateX(150px);
+            margin-bottom: 30px;
+        }
 
+        .profile-info h1 {
+            margin: 0 0 10px 0;
+            font-size: 1.8rem;
+        }
+
+        .profile-info p {
+            font-size: 1rem;
+            margin: 5px 0;
         }
 
         .profile-bio {
-            transform: translateY(-250px);
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-
-            width: 1200px;
-            height: 200px;
-            padding: 50px;
+            width: 100%;
+            max-width: 1000px;
+            padding: 30px;
             background-color: #249cff;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(97, 181, 255, 0.803);
             text-align: center;
-            margin-bottom: 20px;
-            transform: translateY(-150px);
-
-
-
+            margin-bottom: 40px;
         }
 
         .skills {
-            transform: translateY(-40px);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .skills h2 {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .skill {
+            background-color: #08123c;
+            padding: 8px 15px;
+            border-radius: 10px;
+            border: 2px solid #0a00d1;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            font-weight: bold;
+        }
+
+        .goal {
+            font-style: italic;
+            font-size: 1.1rem;
+            margin: 15px 0;
+        }
+
+        .stats {
+            display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
+            font-size: 1rem;
+            margin-bottom: 20px;
         }
-        .goal {
-            transform: translateY(-30px);
-            font-style: italic;
-            font-size: 23px;
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
         }
+
         .links a {
             border: 3px solid #0a00d1;
             border-radius: 8px;
@@ -83,52 +120,84 @@
             box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.871);
             color: #ffffff;
             text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
         }
-        
+
         .links a:hover {
+            border-color: #58a6ff;
+            box-shadow: 0 0 15px #ffffff, 0 0 25px #58a6ff;
+            transform: scale(1.05);
+        }
 
-            border: 3px solid #58a6ff;
-            border-radius: 8px;
-             padding: 12px 24px;
-            background-color: #08123c;
-            box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff;
-            color: #ffffff;
-            text-decoration: none;
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .profile-pic {
+                width: 150px;
+                height: 150px;
+            }
+
+            .profile-info h1 {
+                font-size: 1.5rem;
+            }
+
+            .goal {
+                font-size: 1rem;
+            }
+
+            .links a {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
         }
-        .stats {
-            transform: translateY(-20px);
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            font-size: 18px;
+
+        @media (max-width: 480px) {
+            .profile-pic {
+                width: 120px;
+                height: 120px;
+            }
+
+            .profile-info {
+                padding: 20px;
+            }
+
+            .profile-info h1 {
+                font-size: 1.3rem;
+            }
+
+            .skills {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .links {
+                flex-direction: column;
+                gap: 10px;
+            }
         }
-        
     </style>
-
 </head>
 
 <body>
-    <div class="profile-pic">
-    </div>
+    <div class="profile-pic"></div>
+
     <div class="profile-info">
         <h1>TANMAY DALABHANJAN</h1>
-        <p>Currently in 12th Std | fresher Web Developer | Coder | JEE aspirant </p>
+        <p>Currently in 12th Std | Fresher Web Developer | Coder | JEE Aspirant</p>
         <p>CodeChef Rating: 0⭐ (Max: 0⭐)</p>
-        <!-- <p>Want to master in CS & AI and also explore Data Science and many other domains in Tech Fields</p> -->
-        <p>passionate about Technology , Coding , always eager to learn new skills </p>
+        <p>Passionate about technology, coding, and always eager to learn new skills.</p>
     </div>
-    <div class="profile-bio">
 
+    <div class="profile-bio">
         <div class="skills">
-            <h2>SKILLS :-</h2>
-            <span class="skill">C and C++,</span>
-            <span class="skill">HTML,</span>
-            <span class="skill">CSS,</span>
-            <span class="skill">JavaScript,</span>
+            <h2>SKILLS:</h2>
+            <span class="skill">C and C++</span>
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
             <span class="skill">GitHub</span>
         </div>
+
         <p class="goal">Goal: To master Computer Software, AI, and Data Science, and become a top-performing coder.</p>
 
         <div class="stats">
@@ -136,6 +205,7 @@
             <div class="stat" id="github-repos">Repos: ...</div>
             <div class="stat" id="codechef-rating">CodeChef: ...</div>
         </div>
+
         <div class="links">
             <a href="https://github.com/TanmayBoss25" target="_blank" rel="noopener">GitHub</a>
             <a href="https://tanmayboss25.github.io/CodeChef-profile-/" target="_blank" rel="noopener">CodeChef</a>
@@ -143,7 +213,7 @@
     </div>
 
     <script>
-        const githubUsername = "tanmayboss25"; // Replace with your GitHub username
+        const githubUsername = "tanmayboss25";
 
         fetch(`https://api.github.com/users/${githubUsername}`)
             .then(res => res.json())
@@ -153,11 +223,8 @@
             })
             .catch(err => console.log(err));
 
-        // Placeholder for CodeChef rating and problems solved
         document.getElementById("codechef-rating").innerText = "Rating: 0 | Problems: 0";
     </script>
-    </div>
 </body>
 
 </html>
-
