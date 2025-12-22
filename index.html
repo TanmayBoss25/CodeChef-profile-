@@ -4,200 +4,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeChef Profile - Tanmay</title>
+    <title>Code chef profile-Tanmay</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
         body {
-            background: linear-gradient(to right, #08123c, #1500b3, #08123c);
+            background: linear-gradient(to right, #63ddf5, #ffffff, #63ddf5);
             font-family: 'Roboto', sans-serif;
-            color: #e1e4e8;
+            color: #171717;
             display: flex;
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
-            margin: 0;
-            padding: 20px;
+            transition: background 0.5s;
         }
 
         .profile-pic {
-            width: 180px;
-            height: 180px;
+            width: 160px;
+            height: 160px;
+            max-width: 40vw;
+            max-height: 40vw;
+            min-width: 100px;
+            min-height: 100px;
             border-radius: 50%;
-            border: 4px solid #58a6ff;
+            border: 5px solid #72b3fc;
             background-image: url('download.jpeg');
             background-size: cover;
             background-position: center;
-            box-shadow: 0 10px 30px rgba(72, 164, 255, 0.879);
-            margin: 40px auto 20px auto;
+            margin: 2rem auto 1rem auto;
+            box-shadow: 0 10px 30px rgba(113, 179, 255, 0.7);
+            transition: box-shadow 0.4s, transform 0.6s cubic-bezier(.76,0,.24,1);
+            animation: fadeInSlide 1.2s;
+            
+            
+        }
+
+        .profile-pic:hover {
+            box-shadow: 0 18px 56px rgba(113, 179, 255, 0.7);
+            transform: scale(1.05) rotate(-3deg);
         }
 
         .profile-info {
-            max-width: 800px;
-            width: 90%;
-            padding: 30px;
-            background-color: #249cff;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 95%;
+            max-width: 550px;
+            padding: 1.5rem 1rem;
+            background-color: #ffffff;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(97, 181, 255, 0.803);
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 1.5rem;
+            transform: none;
+            animation: fadeInSlide 1.2s 0.2s backwards;
+            transition: box-shadow 0.3s, transform 0.3s;
         }
-
-        .profile-info h1 {
-            margin: 0 0 10px 0;
-            font-size: 1.8rem;
-        }
-
-        .profile-info p {
-            font-size: 1rem;
-            margin: 5px 0;
+        .profile-info:hover {
+            box-shadow: 0 20px 40px rgba(33,50,250,0.2);
+            transform: translateY(-4px) scale(1.01);
         }
 
         .profile-bio {
-            width: 100%;
-            max-width: 1000px;
-            padding: 30px;
-            background-color: #249cff;
-            border-radius: 15px;
+            width: 97%;
+            max-width: 650px;
+            padding: 2rem 1.6rem;
+            background-color: #ffffff;
+            border-radius: 18px;
             box-shadow: 0 10px 30px rgba(97, 181, 255, 0.803);
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 2rem;
+            transform: none;
+            animation: fadeInSlide 1.2s 0.35s backwards;
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
+        .profile-bio:hover {
+            box-shadow: 0 15px 35px rgba(50,70,250,0.2);
         }
 
         .skills {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 8px;
-            margin-bottom: 20px;
-        }
-
-        .skills h2 {
-            width: 100%;
-            margin-bottom: 10px;
-        }
-
-        .skill {
-            background-color: #08123c;
-            padding: 8px 15px;
-            border-radius: 10px;
+            gap: 0.7rem;
+            margin: 0.8rem 0;
+            transform: none;
+            transition: gap 0.3s;
             border: 2px solid #0a00d1;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-            font-weight: bold;
+            border-radius: 8px;
+            padding: 0.65em 1.5em;
+            background-color: #08123c;
+            box-shadow: 0px 4px 16px rgba(70,120,255, 0.2);
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.4s cubic-bezier(.79,.14,.15,.86);
         }
-
         .goal {
             font-style: italic;
-            font-size: 1.1rem;
-            margin: 15px 0;
+            font-size: 1.2rem;
+            margin: 0.5rem 0 1rem 0;
+            transform: none;
         }
-
+        .links {
+            margin-top: 1rem;
+        }
+        .links a {
+            display: inline-block;
+            border: 2px solid #0a00d1;
+            border-radius: 8px;
+            padding: 0.65em 1.5em;
+            background-color: #08123c;
+            box-shadow: 0px 4px 16px rgba(70,120,255, 0.2);
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.4s cubic-bezier(.79,.14,.15,.86);
+        }
+        .links a:hover {
+            border: 2px solid #58a6ff;
+            background: #1500b3;
+            color: #fff;
+            box-shadow: 0 0 12px #58a6ff, 0 0 24px #249cff;
+            transform: translateY(-2px) scale(1.07);
+        }
         .stats {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
-            font-size: 1rem;
-            margin-bottom: 20px;
+            align-items: center;
+            gap: 2rem;
+            font-size: 1.1rem;
+            margin: 0.5rem 0 1.1rem 0;
+            transform: none;
+            animation: fadeInSlide 1.2s 0.55s backwards;
         }
-
-        .links {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-        }
-
-        .links a {
-            border: 3px solid #0a00d1;
-            border-radius: 8px;
-            padding: 10px 20px;
-            background-color: #08123c;
-            box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.871);
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-        }
-
-        .links a:hover {
-            border-color: #58a6ff;
-            box-shadow: 0 0 15px #ffffff, 0 0 25px #58a6ff;
-            transform: scale(1.05);
-        }
-
-        /* Responsive design */
         @media (max-width: 768px) {
             .profile-pic {
-                width: 150px;
-                height: 150px;
+                width: 35vw;
+                height: 35vw;
+                min-width: 70px; max-width: 140px;
+                min-height: 70px; max-height: 140px;
             }
-
-            .profile-info h1 {
-                font-size: 1.5rem;
-            }
-
-            .goal {
-                font-size: 1rem;
-            }
-
-            .links a {
-                font-size: 0.9rem;
-                padding: 8px 16px;
-            }
+            .profile-info, .profile-bio { max-width: 97vw; padding: 0.8rem 0.5rem; }
+            .stats { gap: 0.9rem; font-size: 0.97rem; }
         }
-
         @media (max-width: 480px) {
             .profile-pic {
-                width: 120px;
-                height: 120px;
+                width: 60vw; height: 60vw;
+                min-width: 70px; max-width: 95vw;
+                min-height: 70px; max-height: 95vw;
             }
-
-            .profile-info {
-                padding: 20px;
-            }
-
-            .profile-info h1 {
-                font-size: 1.3rem;
-            }
-
-            .skills {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .links {
-                flex-direction: column;
-                gap: 10px;
-            }
+            .profile-info, .profile-bio { max-width: 99vw; }
+            .links a { padding: 0.55em 1.2em; font-size: 0.97rem; }
+            .skills {gap: 0.4rem;}
+        }
+        @keyframes fadeInSlide {
+            0% { opacity: 0; transform: translateY(30px) scale(0.96);}
+            60% { opacity: 1; }
+            100% { opacity: 1; transform: none; }
         }
     </style>
+
 </head>
 
 <body>
-    <div class="profile-pic"></div>
-
+    <div class="profile-pic">
+    </div>
     <div class="profile-info">
         <h1>TANMAY DALABHANJAN</h1>
-        <p>Currently in 12th Std | Fresher Web Developer | Coder | JEE Aspirant</p>
+        <p>Currently in 12th Std | fresher Web Developer | Coder | JEE aspirant </p>
         <p>CodeChef Rating: 0⭐ (Max: 0⭐)</p>
-        <p>Passionate about technology, coding, and always eager to learn new skills.</p>
+        <!-- <p>Want to master in CS & AI and also explore Data Science and many other domains in Tech Fields</p> -->
+        <p>passionate about Technology , Coding , always eager to learn new skills </p>
     </div>
-
     <div class="profile-bio">
+
+        <h2>SKILLS :-</h2>
         <div class="skills">
-            <h2>SKILLS:</h2>
-            <span class="skill">C and C++</span>
-            <span class="skill">HTML</span>
-            <span class="skill">CSS</span>
-            <span class="skill">JavaScript</span>
+            <span class="skill">C and C++,</span>
+            <span class="skill">HTML,</span>
+            <span class="skill">CSS,</span>
+            <span class="skill">JavaScript,</span>
             <span class="skill">GitHub</span>
         </div>
-
         <p class="goal">Goal: To master Computer Software, AI, and Data Science, and become a top-performing coder.</p>
 
         <div class="stats">
@@ -205,7 +198,6 @@
             <div class="stat" id="github-repos">Repos: ...</div>
             <div class="stat" id="codechef-rating">CodeChef: ...</div>
         </div>
-
         <div class="links">
             <a href="https://github.com/TanmayBoss25" target="_blank" rel="noopener">GitHub</a>
             <a href="https://tanmayboss25.github.io/CodeChef-profile-/" target="_blank" rel="noopener">CodeChef</a>
@@ -213,7 +205,7 @@
     </div>
 
     <script>
-        const githubUsername = "tanmayboss25";
+        const githubUsername = "tanmayboss25"; // Replace with your GitHub username
 
         fetch(`https://api.github.com/users/${githubUsername}`)
             .then(res => res.json())
@@ -223,8 +215,10 @@
             })
             .catch(err => console.log(err));
 
+        // Placeholder for CodeChef rating and problems solved
         document.getElementById("codechef-rating").innerText = "Rating: 0 | Problems: 0";
     </script>
+    </div>
 </body>
 
 </html>
