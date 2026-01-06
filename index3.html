@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #63ddf5, #ffffff, #63ddf5);
+            font-family: 'Roboto', sans-serif;
+            color: #171717;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            transition: background 0.5s;
+        }
+
+        .certificates-info {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 97%;
+            max-width: 650px;
+            padding: 2rem 1.6rem;
+            background-color: #ffffff;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(97, 181, 255, 0.803);
+            text-align: center;
+            margin-bottom: 2rem;
+            transform: none;
+            animation: fadeInSlide 1.2s 0.35s backwards;
+            transition: box-shadow 0.3s, transform 0.3s;
+
+        }
+
+        .certificates-info:hover {
+            box-shadow: 0 14px 42px rgba(97, 181, 255, 0.803);
+
+        }
+
+        @media (max-width: 768px) {
+
+
+            .certificates-info {
+                max-width: 97vw;
+                padding: 0.8rem 0.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+
+
+            .certificates-info {
+                max-width: 99vw;
+            }
+        }
+
+        @keyframes fadeInSlide {
+            0% {
+                opacity: 0;
+                transform: translateY(30px) scale(0.96);
+            }
+
+            60% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        .Certificates {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.7rem;
+            margin: 0.8rem 0;
+            transform: none;
+            transition: gap 0.3s;
+            border: 2px solid #0a00d1;
+            border-radius: 8px;
+            padding: 0.65em 1.5em;
+            background-color: #08123c;
+            box-shadow: 0px 4px 16px rgba(70, 120, 255, 0.2);
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.4s cubic-bezier(.79, .14, .15, .86);
+        }
+
+        .links {
+
+
+            display: inline-block;
+            border: 2px solid #0a00d1;
+            border-radius: 8px;
+            padding: 0.65em 1.5em;
+            background-color: #abbcff;
+            box-shadow: 0px 4px 16px rgba(70, 120, 255, 0.2);
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.4s cubic-bezier(.79, .14, .15, .86);
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="certificates-info">
+        <h1> Certificates</h1>
+        <p>Welcome to my certificates page! Here, you'll find a collection of my achievements and certifications that
+            showcase my skills and dedication to continuous learning. Each certificate represents a milestone in my
+            educational journey and professional development.</p>
+        <p>Feel free to explore and learn more about the courses and programs I've completed. I'm proud of these
+            accomplishments and excited to share them with you!</p>
+        <div class="Certificates">
+            <span class="Certificates">Certificates ⬇️</span>
+
+        </div>
+        <div class="links">
+            <a href="AI TOOLS CERTIFICATE.pdf" target="_blank" rel="noopener">AI Tools certificates </a>
+        </div>
+    </div>
+</body>
+
+</html>
