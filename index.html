@@ -106,7 +106,7 @@
             margin: 0.5rem 0 1rem 0;
             transform: none;
         }
-        .links {
+        /* .links {
              margin-top: rem;
             display: inline-flex;
             justify-content: center;
@@ -132,7 +132,44 @@
             background: #1500b3;
             color: #fff;
             box-shadow: 0 0 12px #58a6ff, 0 0 24px #249cff;
+            transform: translateY(-2px) scale(1.07); */
+         .links {
+            /* container for links laid out in rows of four */
+            display: flex;
+            flex-wrap: wrap;            /* allow items to move to next line */
+            justify-content: center;
+            gap: 20px;
+            margin-top: 1rem;          /* added a valid top margin */
+            max-width: 800px;         /* optional: constrain width so only four fit per row */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .links a {
+            /* allow flex items to grow and wrap; four per line at most */
+            flex: 1 1 calc(25% - 40px); /* subtract gap space to avoid overflow */
+            min-width: 120px;          /* ensures buttons don't get too small */
+            max-width: 200px;
+            display: inline-block;
+            border: 2px solid #0a00d1;
+            border-radius: 8px;
+            padding: 0.65em 1.5em;
+            background-color: #08123c;
+            box-shadow: 0px 4px 16px rgba(70,120,255, 0.2);
+            color: #fff;
+            text-decoration: none;
+            /* margin is no longer needed since gap controls spacing */
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.4s cubic-bezier(.79,.14,.15,.86);
+        }
+        .links a:hover {
+            border: 2px solid #58a6ff;
+            background: #1500b3;
+            color: #fff;
+            box-shadow: 0 0 12px #58a6ff, 0 0 24px #249cff;
             transform: translateY(-2px) scale(1.07);
+        }
         }
         .stats {
             display: flex;
@@ -229,6 +266,7 @@
 </body>
 
 </html>
+
 
 
 
