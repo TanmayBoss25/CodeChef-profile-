@@ -847,6 +847,133 @@
                 font-size: 2.2rem;
             }
         }
+          /* ── INTRODUCTION SECTION ─────────────────────── */
+        #intro {
+            padding: 4rem 1.5rem;
+            background: var(--bg2);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .intro-inner {
+            max-width: 960px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 3.5rem;
+            align-items: start;
+        }
+
+        .intro-tag {
+            display: inline-block;
+            font-family: 'DM Mono', monospace;
+            font-size: 0.78rem;
+            color: var(--accent);
+            letter-spacing: 0.1em;
+            margin-bottom: 0.7rem;
+        }
+
+        .intro-heading {
+            font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            line-height: 1.15;
+            margin-bottom: 1.2rem;
+        }
+
+        .intro-heading span {
+            color: var(--accent);
+        }
+
+        .intro-text {
+            font-size: 0.95rem;
+            color: var(--muted);
+            line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+
+        .intro-text strong {
+            color: var(--text);
+            font-weight: 700;
+        }
+
+        .intro-facts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-top: 1.5rem;
+        }
+
+        .intro-fact {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.35rem 0.85rem;
+            border-radius: 50px;
+            background: var(--bg3);
+            border: 1px solid var(--border);
+            font-size: 0.82rem;
+            font-family: 'DM Mono', monospace;
+            color: var(--muted);
+            transition: all 0.22s;
+        }
+
+        .intro-fact:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .fact-icon {
+            font-size: 0.95rem;
+        }
+
+        /* Right side cards */
+        .intro-right {
+            display: flex;
+            flex-direction: column;
+            gap: 1.1rem;
+        }
+
+        .intro-card {
+            background: var(--bg3);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 1.3rem 1.4rem;
+            transition: box-shadow var(--transition), transform var(--transition), border var(--transition);
+        }
+
+        .intro-card:hover {
+            box-shadow: var(--card-hover);
+            transform: translateX(5px);
+            border-color: var(--accent);
+        }
+
+        .icard-icon {
+            font-size: 1.5rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .icard-title {
+            font-size: 0.88rem;
+            font-weight: 800;
+            margin-bottom: 0.3rem;
+            letter-spacing: 0.01em;
+        }
+
+        .icard-body {
+            font-size: 0.83rem;
+            color: var(--muted);
+            line-height: 1.6;
+            font-family: 'DM Mono', monospace;
+        }
+
+        /* Responsive */
+        @media (max-width: 700px) {
+            .intro-inner {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
     </style>
 </head>
 
@@ -891,6 +1018,63 @@
                 <a href="#projects" class="btn-primary">View Projects</a>
                 <a href="#contact" class="btn-outline">Get in Touch</a>
             </div>
+        </div>
+    </section>
+     <!-- INTRODUCTION SECTION -->
+    <section id="intro">
+        <div class="intro-inner">
+
+            <div class="intro-left">
+                <span class="intro-tag">// about me</span>
+                <h2 class="intro-heading">Hey, I'm <span>Tanmay</span> 👋</h2>
+                <p class="intro-text">
+                    I'm a 12th standard student from India, passionate about Technology,
+                    Coding, Software and Artificial Intelligence. I have a deep interest to learn and how to build real world projects like AAA games, Softwares and Applications . I started my coding journey with
+                    C and C++, and now I'm diving deep into Frontend Web Development —
+                    building things that actually look good and work well.
+                </p>
+                <p class="intro-text">
+                    I'm also a JEE aspirant who believes that problem-solving in competitive
+                    exams and competitive programming go hand in hand. When I'm not studying
+                    or coding , I work on my Hobbies that are Sketching , Content Creation, researching about Sci-fi things , Science , Technology , etc. I like to make Content Creation and I have already Started it but have paused due to some academic issue . And Interestinly I have Planned to continue it when i will go to Scalar School of technology . 
+                </p>
+                <p class="intro-text">
+                    My goal is simple — master Computer Science, AI, and Data Science, and
+                    become someone who builds things that matter in this new Era of AI . Also I want to Start a Startup with my team full of Developers, Designer, Engineeres, Mathematicians Where we will Build Sofwares like Android, Windows and apple, A seemless Ecosystem of Various Devices like Laptop,phone, smartwatches like Apple ,  Samsung and Huawei. And will actually Dominate the Tech Industry  🚀
+                </p>
+
+                <!-- ✏️ ADD / EDIT YOUR QUICK FACTS BELOW -->
+                <div class="intro-facts">
+                    <div class="intro-fact"><span class="fact-icon">📍</span> India</div>
+                    <div class="intro-fact"><span class="fact-icon">🎓</span> 12th Std Student</div>
+                    <div class="intro-fact"><span class="fact-icon">💻</span> Frontend Dev</div>
+                    <div class="intro-fact"><span class="fact-icon">🤖</span> AI Enthusiast</div>
+                    <div class="intro-fact"><span class="fact-icon">🎯</span> JEE Aspirant</div>
+                    <div class="intro-fact"><span class="fact-icon">📺</span> YouTuber</div>
+                </div>
+            </div>
+
+            <div class="intro-right">
+                <!-- ✏️ EDIT THESE CARDS FREELY — add/remove/change any card -->
+                <div class="intro-card">
+                    <div class="icard-icon">🧠</div>
+                    <div class="icard-title">Currently Learning</div>
+                    <div class="icard-body"> How to Build Full Stack Working Applications with help of AI 
+                    </div>
+                </div>
+                <div class="intro-card">
+                    <div class="icard-icon">🎧</div>
+                    <div class="icard-title">Vibe Coding</div>
+                    <div class="icard-body">Using AI and My Current Knowlegde to Build real world Projects . 
+                    </div>
+                </div>
+                <div class="intro-card">
+                    <div class="icard-icon">💡</div>
+                    <div class="icard-title">Fun Fact</div>
+                    <div class="icard-body">I have Started my Content Creation Journey with Gaming and from Gaming I got Interest in Coding . Curious to Build AAA games like GTA 5 , RDR2 , etc </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
