@@ -1000,140 +1000,7 @@
             color: #ff9c09;
             font-weight: 700;
         }
-         .hero-video-wrapper {
-
-            justify-content: center;
-            display: flex;
-            width: 100%;
-            max-width: 450px;
-            margin-top: 0.5rem;
-            margin-bottom: 0.8rem;
-            padding: 3rem 1.5rem 0;
-
-
-
-
-        }
-
-        /* Center video only on PC screens */
-        @media (min-width: 768px) {
-            .hero-video-wrapper {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-left: auto;
-                margin-right: auto;
-            }
-        }
-
-
-        .video-container {
-            position: relative;
-            width: 100%;
-            border-radius: 16px;
-            overflow: hidden;
-            background: #000;
-            box-shadow: 0 20px 60px rgba(0, 82, 204, 0.3);
-            border: 1.5px solid var(--border);
-            width: 300px;
-            aspect-ratio: 9 / 16;
-            /* aspect-ratio: 16 / 9; */
-            cursor: pointer;
-            transition: box-shadow var(--transition), transform var(--transition);
-        }
-
-        .video-container:hover {
-            box-shadow: 0 28px 72px rgba(0, 82, 204, 0.45);
-            transform: translateY(-3px);
-        }
-
-        /* Thumbnail image */
-        .video-thumbnail {
-            aspect-ratio: 16 / 9;
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 16px;
-            z-index: 1;
-            transition: opacity 0.4s ease;
-        }
-
-        .video-thumbnail.hidden {
-            opacity: 0;
-            pointer-events: none;
-        }
-
-        /* Big play button overlay */
-        .play-overlay {
-            position: absolute;
-            inset: 0;
-            z-index: 2;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: transparent;
-            border: none;
-            cursor: pointer;
-            transition: opacity 0.35s ease, transform 0.35s ease;
-        }
-
-        .play-overlay svg {
-            width: 80px;
-            height: 80px;
-            filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.5));
-            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-        }
-
-        .play-overlay:hover svg {
-            transform: scale(1.12);
-        }
-
-        .play-overlay.hidden {
-            opacity: 0;
-            pointer-events: none;
-        }
-
-        /* The actual video element */
-        .hero-video {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 16px;
-            z-index: 0;
-            opacity: 0;
-            transition: opacity 0.4s ease;
-        }
-
-        .hero-video.visible {
-            opacity: 1;
-            z-index: 3;
-        }
-
-        /* Video caption label */
-        .video-caption {
-            text-align: center;
-            font-family: 'DM Mono', monospace;
-            font-size: 0.75rem;
-            color: var(--muted);
-            margin-top: 0.6rem;
-            letter-spacing: 0.06em;
-        }
-
-        /* Responsive */
-        @media (max-width: 700px) {
-            .hero-video-wrapper {
-                max-width: 100%;
-            }
-
-            .play-overlay svg {
-                width: 60px;
-                height: 60px;
-            }
-        }
+         
     </style>
 </head>
 
@@ -1181,14 +1048,14 @@
         </div>
     </section>
       
-    <div class="hero-video-wrapper reveal">
+    <!-- <div class="hero-video-wrapper reveal">
         <div class="video-container" id="videoContainer">
 
             <!-- Thumbnail shown before play -->
-            <img src="thumbnail.png.jpeg" alt="Video thumbnail" class="video-thumbnail" id="videoThumbnail" />
+            <!-- <img src="thumbnail.png.jpeg" alt="Video thumbnail" class="video-thumbnail" id="videoThumbnail" />
 
             <!-- Big play button overlay -->
-            <button class="play-overlay" id="playOverlay" aria-label="Play video">
+            <!-- <button class="play-overlay" id="playOverlay" aria-label="Play video">
                 <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="40" cy="40" r="38" stroke="white" stroke-width="2.5" fill="rgba(0,0,0,0.45)" />
                     <polygon points="32,24 60,40 32,56" fill="white" />
@@ -1196,13 +1063,13 @@
             </button>
 
             <!-- Actual video — hidden until play is clicked -->
-            <video id="heroVideo" class="hero-video" controls preload="none" playsinline>
+            <!-- <video id="heroVideo" class="hero-video" controls preload="none" playsinline>
                 <source src="video.mp4.mp4" type="video/mp4" />
                 Your browser does not support HTML5 video.
             </video>
 
         </div>
-    </div>
+    </div> --> --> --> -->
     <!-- INTRODUCTION SECTION -->
     <section id="intro">
         <div class="intro-inner">
@@ -1746,38 +1613,38 @@
             }
             btn.textContent = 'Send Message ↗'; btn.disabled = false;
         }
-         (function () {
-            const playBtn = document.getElementById('playOverlay');
-            const video = document.getElementById('heroVideo');
-            const thumbnail = document.getElementById('videoThumbnail');
+        //  (function () {
+        //     const playBtn = document.getElementById('playOverlay');
+        //     const video = document.getElementById('heroVideo');
+        //     const thumbnail = document.getElementById('videoThumbnail');
 
-            if (!playBtn || !video || !thumbnail) return;
+        //     if (!playBtn || !video || !thumbnail) return;
 
-            function startVideo() {
-                // Hide thumbnail and play button
-                thumbnail.classList.add('hidden');
-                playBtn.classList.add('hidden');
+        //     function startVideo() {
+        //         // Hide thumbnail and play button
+        //         thumbnail.classList.add('hidden');
+        //         playBtn.classList.add('hidden');
 
-                // Show and play video
-                video.classList.add('visible');
-                video.play().catch(() => {
-                    // If play fails (e.g. browser blocked), show controls anyway
-                    video.controls = true;
-                });
-            }
+        //         // Show and play video
+        //         video.classList.add('visible');
+        //         video.play().catch(() => {
+        //             // If play fails (e.g. browser blocked), show controls anyway
+        //             video.controls = true;
+        //         });
+        //     }
 
-            // Click on play button OR anywhere on the thumbnail starts video
-            playBtn.addEventListener('click', startVideo);
-            thumbnail.addEventListener('click', startVideo);
+        //     // Click on play button OR anywhere on the thumbnail starts video
+        //     playBtn.addEventListener('click', startVideo);
+        //     thumbnail.addEventListener('click', startVideo);
 
-            // If video ends, show thumbnail again
-            video.addEventListener('ended', function () {
-                video.classList.remove('visible');
-                video.currentTime = 0;
-                thumbnail.classList.remove('hidden');
-                playBtn.classList.remove('hidden');
-            });
-        })();
+        //     // If video ends, show thumbnail again
+        //     video.addEventListener('ended', function () {
+        //         video.classList.remove('visible');
+        //         video.currentTime = 0;
+        //         thumbnail.classList.remove('hidden');
+        //         playBtn.classList.remove('hidden');
+        //     });
+        // })();
     </script>
 </body>
 
