@@ -1390,27 +1390,7 @@
     </footer>
 
     <script>
-        /* ════════════════════════════════════════════════
-           ██████████████████████████████████████████████
-           ██  CERTIFICATES — EDIT THIS ARRAY TO UPDATE ██
-           ██████████████████████████████████████████████
-           ════════════════════════════════════════════════
-      
-           HOW TO ADD A NEW CERTIFICATE:
-           Copy one { } block below, paste it at the end
-           of the array (before the closing ]), and fill
-           in the fields. The page auto-updates.
-      
-           FIELDS:
-             icon     → any emoji that fits
-             title    → name of the certificate
-             issuer   → platform / organization that gave it
-             date     → month + year (e.g. "Jan 2025")
-             category → used for filter buttons; keep it short
-                        e.g. "Web Dev", "DSA", "AI/ML", "Other"
-             link     → paste your Google Drive / direct URL here
-                        set to "" if you don't have a link yet
-        ═══════════════════════════════════════════════ */
+     
         const certificates = [
             // ── EXAMPLE (replace or add your own below) ──────────────
             {
@@ -1437,19 +1417,7 @@
                 category: "Subject-Math",
                 link: "SSTNSETMathcertificate.png"
             },
-            // ── ADD MORE CERTIFICATES BELOW THIS LINE ─────────────────
-            // {
-            //   icon:     "📜",
-            //   title:    "Certificate Name",
-            //   issuer:   "Issuing Platform",
-            //   date:     "Month Year",
-            //   category: "Category",
-            //   link:     "https://drive.google.com/your-link-here"
-            // },
-        ];
-        /* ════════════════════════════════════════════════
-           END OF EDITABLE SECTION — don't touch below
-        ═══════════════════════════════════════════════ */
+           
 
         function buildCerts(filter) {
             const grid = document.getElementById('certs-grid');
