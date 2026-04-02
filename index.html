@@ -195,7 +195,7 @@
             width: 100%;
             height: 100%;
             border-radius: 50%;
-            background: url('tanmaypic.jpeg') center/cover, var(--bg3);
+            background: url('tanmayprofilepic.jpeg') center/cover, var(--bg3);
             overflow: hidden;
             border-radius: 50%;
         }
@@ -986,7 +986,7 @@
             font-weight: 700;
         }
 
-          .words1 {
+        .words1 {
             color: #d92bf0;
             font-weight: 700;
         }
@@ -1000,7 +1000,8 @@
             color: #ff9c09;
             font-weight: 700;
         }
-         
+
+       
     </style>
 </head>
 
@@ -1047,29 +1048,8 @@
             </div>
         </div>
     </section>
-      
-    <!-- <div class="hero-video-wrapper reveal">
-        <div class="video-container" id="videoContainer">
 
-            <!-- Thumbnail shown before play -->
-            <!-- <img src="thumbnail.png.jpeg" alt="Video thumbnail" class="video-thumbnail" id="videoThumbnail" />
-
-            <!-- Big play button overlay -->
-            <!-- <button class="play-overlay" id="playOverlay" aria-label="Play video">
-                <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="40" cy="40" r="38" stroke="white" stroke-width="2.5" fill="rgba(0,0,0,0.45)" />
-                    <polygon points="32,24 60,40 32,56" fill="white" />
-                </svg>
-            </button>
-
-            <!-- Actual video — hidden until play is clicked -->
-            <!-- <video id="heroVideo" class="hero-video" controls preload="none" playsinline>
-                <source src="video.mp4.mp4" type="video/mp4" />
-                Your browser does not support HTML5 video.
-            </video>
-
-        </div>
-    </div> --> 
+ 
     <!-- INTRODUCTION SECTION -->
     <section id="intro">
         <div class="intro-inner">
@@ -1079,7 +1059,7 @@
                 <h2 class="intro-heading">Hey, I'm <span>Tanmay</span> 👋</h2>
                 <p class="intro-text">
                     <span class="letters">Introduction -</span>
-                    I'm a 12th standard student from India,<span class="words2">passionate</span> about <span
+                    I'm a 12th standard student from India , <span class="words2">passionate </span> about <span
                         class="words1">Technology</span>,<span class="words1">Coding</span>,
                     <span class="words1">Software</span> and <span class="words1">Artificial Intelligence</span>. I have
                     a <span class="words2">deep interest </span> to learn and how to build real world projects like
@@ -1271,19 +1251,6 @@
                     <a class="project-link" href="https://tanmayboss25.github.io/Card-Design-1-/" target="_blank"
                         rel="noopener">View live →</a>
                 </div>
-                <div class="project-card reveal">
-                    <div class="project-icon">🔢</div>
-                    <div class="project-name">Binary Language Converter</div>
-                    <div class="project-desc">Can Convert Human Language to machine Language and Vice Versa</div>
-                    <div class="project-tags">
-                        <span class="project-tag">HTML</span>
-                        <span class="project-tag">CSS</span>
-                        <span class="project-tag">JavaScript</span>
-                        <span class="project-tag">GitHub Pages</span>
-                    </div>
-                    <a class="project-link" href="https://tanmayboss25.github.io/Binary-Language-Converter-/" target="_blank"
-                        rel="noopener">View live →</a>
-                </div>
 
                 <div class="project-card reveal" style="border-style: dashed; opacity: 0.7;">
                     <div class="project-icon">🚀</div>
@@ -1386,11 +1353,31 @@
 
     <!-- FOOTER -->
     <footer>
-        <p>Built by <a href="#">Tanmay Dalabhanjan</a> · 2026 · Vibe Coder</p>
+        <p>Built with AI by <a href="#">Tanmay Dalabhanjan</a> · 2026 · Vibe Coder</p>
     </footer>
 
     <script>
-     
+        /* ════════════════════════════════════════════════
+           ██████████████████████████████████████████████
+           ██  CERTIFICATES — EDIT THIS ARRAY TO UPDATE ██
+           ██████████████████████████████████████████████
+           ════════════════════════════════════════════════
+      
+           HOW TO ADD A NEW CERTIFICATE:
+           Copy one { } block below, paste it at the end
+           of the array (before the closing ]), and fill
+           in the fields. The page auto-updates.
+      
+           FIELDS:
+             icon     → any emoji that fits
+             title    → name of the certificate
+             issuer   → platform / organization that gave it
+             date     → month + year (e.g. "Jan 2025")
+             category → used for filter buttons; keep it short
+                        e.g. "Web Dev", "DSA", "AI/ML", "Other"
+             link     → paste your Google Drive / direct URL here
+                        set to "" if you don't have a link yet
+        ═══════════════════════════════════════════════ */
         const certificates = [
             // ── EXAMPLE (replace or add your own below) ──────────────
             {
@@ -1417,7 +1404,19 @@
                 category: "Subject-Math",
                 link: "SSTNSETMathcertificate.png"
             },
-           
+            // ── ADD MORE CERTIFICATES BELOW THIS LINE ─────────────────
+            // {
+            //   icon:     "📜",
+            //   title:    "Certificate Name",
+            //   issuer:   "Issuing Platform",
+            //   date:     "Month Year",
+            //   category: "Category",
+            //   link:     "https://drive.google.com/your-link-here"
+            // },
+        ];
+        /* ════════════════════════════════════════════════
+           END OF EDITABLE SECTION — don't touch below
+        ═══════════════════════════════════════════════ */
 
         function buildCerts(filter) {
             const grid = document.getElementById('certs-grid');
@@ -1510,7 +1509,7 @@
         const skills = [
             { name: "C / C++", pct: 30, note: "DSA & Problem Solving" },
             { name: "HTML & CSS", pct: 80, note: "Layouts, Animations, Responsive" },
-            { name: "JavaScript", pct: 25, note: "DOM, APIs, Logic" },
+            { name: "JavaScript", pct: 10, note: "DOM, APIs, Logic" },
             { name: "GitHub", pct: 80, note: "Version Control, Pages" },
             { name: "AI Tools", pct: 90, note: "Prompt Engineering, Productivity" },
         ];
@@ -1581,38 +1580,7 @@
             }
             btn.textContent = 'Send Message ↗'; btn.disabled = false;
         }
-        //  (function () {
-        //     const playBtn = document.getElementById('playOverlay');
-        //     const video = document.getElementById('heroVideo');
-        //     const thumbnail = document.getElementById('videoThumbnail');
-
-        //     if (!playBtn || !video || !thumbnail) return;
-
-        //     function startVideo() {
-        //         // Hide thumbnail and play button
-        //         thumbnail.classList.add('hidden');
-        //         playBtn.classList.add('hidden');
-
-        //         // Show and play video
-        //         video.classList.add('visible');
-        //         video.play().catch(() => {
-        //             // If play fails (e.g. browser blocked), show controls anyway
-        //             video.controls = true;
-        //         });
-        //     }
-
-        //     // Click on play button OR anywhere on the thumbnail starts video
-        //     playBtn.addEventListener('click', startVideo);
-        //     thumbnail.addEventListener('click', startVideo);
-
-        //     // If video ends, show thumbnail again
-        //     video.addEventListener('ended', function () {
-        //         video.classList.remove('visible');
-        //         video.currentTime = 0;
-        //         thumbnail.classList.remove('hidden');
-        //         playBtn.classList.remove('hidden');
-        //     });
-        // })();
+   
     </script>
 </body>
 
