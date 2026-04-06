@@ -17,14 +17,6 @@
                 link: "SSTNSETLogicalResoningCertificate.png"
             },
             {
-                icon: "📏",
-                title: "SST Nset Mathematics Certificate",
-                issuer: "Scalar School of Technology",
-                date: "2026",
-                category: "Subject-Math",
-                link: "SSTNSETMathcertificate.png"
-            },
-            {
                 icon: "🪼",
                 title: "Meet Your Seniors Scalar MasterClass Certificate",
                 issuer: "Scalar School of Technology",
@@ -32,6 +24,15 @@
                 category: "None",
                 link: "ScalarmasterclassMeetYourSeniors.png"
             },
+            {
+                icon: "📏",
+                title: "SST Nset Mathematics Certificate",
+                issuer: "Scalar School of Technology",
+                date: "2026",
+                category: "Subject-Math",
+                link: "SSTNSETMathcertificate.png"
+            },
+           
          
         ];
         /* ════════════════════════════════════════════════
