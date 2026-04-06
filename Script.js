@@ -24,6 +24,14 @@
                 category: "Subject-Math",
                 link: "SSTNSETMathcertificate.png"
             },
+            {
+                icon: "🪼",
+                title: "Meet Your Seniors Scalar MasterClass Certificate",
+                issuer: "Scalar School of Technology",
+                date: "2026",
+                category: "None",
+                link: "ScalarmasterclassMeetYourSeniors.png"
+            },
          
         ];
         /* ════════════════════════════════════════════════
