@@ -107,7 +107,7 @@
         const lines = [
             "Fresher Frontend Developer.",
             "JEE Aspirant & Problem Solver.",
-            "Vibe Coder 🎧",
+            " Coder 🎧",
             "AI Tool Enthusiast.",
             "Passionate about Tech & CS.",
         ];
