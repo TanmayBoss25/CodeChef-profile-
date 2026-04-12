@@ -129,7 +129,7 @@
         /* ── SKILLS DATA ──────────────────────── */
         const skills = [
             { name: "C / C++", pct: 30, note: "DSA & Problem Solving" },
-            { name: "HTML & CSS", pct: 80, note: "Layouts, Animations, Responsive" },
+            { name: "HTML & CSS", pct: 85, note: "Layouts, Animations, Responsive" },
             { name: "JavaScript", pct: 25, note: "DOM, APIs, Logic" },
             { name: "GitHub", pct: 80, note: "Version Control, Pages" },
             { name: "AI Tools", pct: 90, note: "Prompt Engineering, Productivity" },
