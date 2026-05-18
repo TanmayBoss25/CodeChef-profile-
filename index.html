@@ -5,21 +5,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tanmay Dalabhanjan – Portfolio</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <link
         href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap"
         rel="stylesheet" />
-  
+
     <link rel="stylesheet" href="style.css" />
+    <style>
+        /* moved inline styles to a class to avoid inline-style usage */
+        .section-padding { padding: 3rem 1.5rem; }
+        .project-card--upcoming { border-style: dashed; opacity: 0.7; }
+    </style>
 </head>
 
 <body>
 
     <!-- NAV -->
     <nav>
-        <a class="nav-logo" href="#"></a>
+        <a class="nav-logo" href="#">TD_</a>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
+            <li><a href="#frontend-skills">Skills</a></li>
+            <li><a href="#skills">Tools</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#certificates">Certificates</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -46,7 +53,7 @@
                 <span class="hero-badge">12th Std Student</span>
                 <span class="hero-badge">JEE Aspirant</span>
                 <span class="hero-badge">Frontend Dev</span>
-                <span class="hero-badge">Coder</span>
+                <span class="hero-badge">Vibe Coder</span>
                 <span class="hero-badge">AI Tool Expert</span>
             </div>
             <div class="hero-cta">
@@ -56,7 +63,7 @@
         </div>
     </section>
 
- 
+
     <!-- INTRODUCTION SECTION -->
     <section id="intro">
         <div class="intro-inner">
@@ -128,7 +135,8 @@
                 <div class="intro-card">
                     <div class="icard-icon">🧠</div>
                     <div class="icard-title">Currently Learning</div>
-                    <div class="icard-body">Learning How to Build Full Stack Websites and Learning advanced C++ and DSA to make Games 
+                    <div class="icard-body">Learning How to Build Full Stack Websites and Learning advanced C++ and DSA
+                        to make Games
                     </div>
                 </div>
                 <div class="intro-card">
@@ -155,14 +163,19 @@
                     <div class="icard-icon">💯</div>
                     <div class="icard-title">Quotes that inspires me </div>
                     <div class="icard-body">
-                        <div><b class="words4">1.</b>The Less time you have, The More productive you became. - The law of
-                        urgency.</div>
-                        <div><b class="words4">2.</b>One life , just one why aren't we running towards our goals to achieve it we have to.</div>
+                        <div><b class="words4">1.</b>The Less time you have, The More productive you became. - The law
+                            of
+                            urgency.</div>
+                        <div><b class="words4">2.</b>One life , just one why aren't we running towards our goals to
+                            achieve it we have to.</div>
                         <div><b class="words4">3.</b>The best Addiction you can have is - Self Improvement.</div>
-                        <div><b class="words4">4.</b>If you have an idea that you genuinely think is good don't let some idiot talk you out of it -
-                        Based on Startup .</div>
-                        <div><b class="words4">5.</b> Read books, Workout , Learn Coding and build something Maybe that's All you need .</div>
-                        <div><b class="words4">6.</b>What a time we live in to be able to learn and master anything we wish. </div>
+                        <div><b class="words4">4.</b>If you have an idea that you genuinely think is good don't let some
+                            idiot talk you out of it -
+                            Based on Startup .</div>
+                        <div><b class="words4">5.</b> Read books, Workout , Learn Coding and build something Maybe
+                            that's All you need .</div>
+                        <div><b class="words4">6.</b>What a time we live in to be able to learn and master anything we
+                            wish. </div>
                         <div><b class="words4">7.</b>Trust the process.</div>
                         <div><b class="words4">8.</b>All you need is 6 months, a laptop and a good team to build.</div>
                         <div><b class="words4">9.</b>Don't let your dream die - Refocus.</div>
@@ -177,7 +190,7 @@
     </section>
 
     <!-- STATS -->
-    <section style="padding:3rem 1.5rem;">
+    <section class="section-padding">
         <div class="section-inner">
             <div class="stats-row">
                 <div class="stat-card reveal">
@@ -199,6 +212,133 @@
             </div>
         </div>
     </section>
+    <!-- ===== HAND-ON SKILLS SECTION ===== -->
+    <section id="frontend-skills">
+        <p class="hs-label">// hand-on skills</p>
+        <h2 class="hs-title">Frontend <span>Developer</span></h2>
+        <p class="hs-subtitle">Real projects. Real code. Built from scratch.</p>
+
+        <!-- Tech Tags -->
+        <div class="hs-tags">
+            <span class="hs-tag">HTML5</span>
+            <span class="hs-tag">CSS3</span>
+            <span class="hs-tag">JavaScript</span>
+            <span class="hs-tag">GitHub Pages</span>
+            <span class="hs-tag">Responsive Design</span>
+            <span class="hs-tag">UI/UX</span>
+        </div>
+
+        <!-- Stat Cards -->
+        <div class="hs-cards">
+            <div class="hs-card">
+                <div class="hs-card-icon">🚀</div>
+                <div class="hs-card-title">Live Projects</div>
+                <div class="hs-card-val">5+</div>
+                <div class="hs-card-sub">Deployed on GitHub Pages</div>
+            </div>
+            <div class="hs-card">
+                <div class="hs-card-icon">🛠️</div>
+                <div class="hs-card-title">Tools Mastered</div>
+                <div class="hs-card-val">8+</div>
+                <div class="hs-card-sub">HTML · CSS · JS & more</div>
+            </div>
+            <div class="hs-card">
+                <div class="hs-card-icon">📜</div>
+                <div class="hs-card-title">Certificates</div>
+                <div class="hs-card-val">—</div>
+                <div class="hs-card-sub">In progress</div>
+            </div>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="hs-cta-wrap">
+            <button class="hs-cta-btn" id="hsOpenBtn">CHECKOUT MY WORK →</button>
+        </div>
+    </section>
+
+    <!-- ===== MODAL OVERLAY ===== -->
+    <div id="fdOverlay" class="fd-overlay">
+        <div class="fd-modal">
+
+            <button class="fd-modal-close" id="hsCloseBtn">✕</button>
+
+            <p class="fd-modal-label">// frontend developer</p>
+            <h3 class="fd-modal-title">Tanmay's Dev Portfolio</h3>
+
+            <!-- Projects -->
+            <div class="fd-section">
+                <div class="fd-section-heading">🚀 WEB DEV PROJECTS</div>
+                <div class="fd-proj-grid">
+
+                    <div class="fd-proj-card">
+                        <div class="fd-proj-name">🎥 UltraEdit Clone</div>
+                        <div class="fd-proj-desc">Pixel-accurate clone of the UltraEdit website.</div>
+                        <a href="https://tanmayboss25.github.io/UltraEditClone/" target="_blank" rel="noopener noreferrer"
+                            class="fd-proj-link">View live →</a>
+                    </div>
+
+                    <div class="fd-proj-card">
+                        <div class="fd-proj-name">🙎 Personal Blog</div>
+                        <div class="fd-proj-desc">Save notes, photos, and birthdays in one place.</div>
+                        <a href="https://tanmayboss25.github.io/PersonalBlog/" target="_blank" rel="noopener noreferrer" class="fd-proj-link">View
+                            live →</a>
+                    </div>
+
+                    <div class="fd-proj-card">
+                        <div class="fd-proj-name">📚 JEE Prep Website</div>
+                        <div class="fd-proj-desc">Clean, shareable JEE preparation resource site.</div>
+                        <a href="https://tanmayboss25.github.io/Jee-Preparations-/" target="_blank" rel="noopener noreferrer"
+                            class="fd-proj-link">View live →</a>
+                    </div>
+
+                    <div class="fd-proj-card">
+                        <div class="fd-proj-name">🚗 Bugatti Details Page</div>
+                        <div class="fd-proj-desc">Stylish UI for Bugatti car characteristics.</div>
+                        <a href="https://tanmayboss25.github.io/Card-Design-1-/" target="_blank" rel="noopener noreferrer"
+                            class="fd-proj-link">View live →</a>
+                    </div>
+
+                    <div class="fd-proj-card">
+                        <div class="fd-proj-name">🔢 Binary Converter</div>
+                        <div class="fd-proj-desc">Convert human language to machine language & back.</div>
+                        <a href="https://tanmayboss25.github.io/Binary-Language-Converter-/" target="_blank" rel="noopener noreferrer"
+                            class="fd-proj-link">View live →</a>
+                    </div>
+
+                    <div class="fd-proj-card">
+                        <div class="fd-proj-name">🔜 Next Project</div>
+                        <div class="fd-proj-desc">Something exciting is in the works. Stay tuned.</div>
+                        <span class="fd-coming-soon">Coming Soon</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Tools -->
+            <div class="fd-section">
+                <div class="fd-section-heading">🛠️ TOOLS MASTERED</div>
+                <div class="fd-tools-grid">
+                    <span class="fd-tool-chip">HTML5</span>
+                    <span class="fd-tool-chip">CSS3</span>
+                    <span class="fd-tool-chip">JavaScript</span>
+                    <span class="fd-tool-chip">GitHub</span>
+                    <span class="fd-tool-chip">GitHub Pages</span>
+                    <span class="fd-tool-chip">Responsive Design</span>
+                    <span class="fd-tool-chip">UI Design</span>
+                    <span class="fd-tool-chip">AI Tools</span>
+                    <span class="fd-tool-chip">C / C++</span>
+                    <span class="fd-tool-chip">React (learning)</span>
+                </div>
+            </div>
+
+            <!-- Certificates -->
+            <div class="fd-section">
+                <div class="fd-section-heading">📜 CERTIFICATES</div>
+                <div class="fd-cert-empty">No certificates added yet — check back soon.</div>
+            </div>
+
+        </div>
+    </div>
 
     <!-- SKILLS -->
     <section id="skills">
@@ -212,7 +352,7 @@
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" style="background: var(--bg);">
+    <section id="projects" class="section-padding">
         <div class="section-inner">
             <p class="section-label reveal">Built with curiosity</p>
             <h2 class="section-title reveal">My <span>Projects</span></h2>
@@ -230,32 +370,6 @@
                     <a class="project-link" href="https://tanmayboss25.github.io/UltraEditClone/" target="_blank"
                         rel="noopener">View live →</a>
                 </div>
-                <div class="project-card reveal">
-                    <div class="project-icon">🙎</div>
-                    <div class="project-name">Personal Blog </div>
-                    <div class="project-desc">A perosnal blog website which can save your notes,photos,birthdays,etc</div>
-                    <div class="project-tags">
-                        <span class="project-tag">HTML</span>
-                        <span class="project-tag">CSS</span>
-                        <span class="project-tag">JavaScript</span>
-                        <span class="project-tag">GitHub Pages</span>
-                    </div>
-                    <a class="project-link" href="https://tanmayboss25.github.io/PersonalBlog/" target="_blank"
-                        rel="noopener">View live →</a>
-                </div>
-                <!-- <div class="project-card reveal">
-                    <div class="project-icon">🎧</div>
-                    <div class="project-name">Tunezy</div>
-                    <div class="project-desc"> A music web in which you can listen to musics </div>
-                    <div class="project-tags">
-                        <span class="project-tag">HTML</span>
-                        <span class="project-tag">CSS</span>
-                        <span class="project-tag">JavaScript</span>
-                        <span class="project-tag">GitHub Pages</span>
-                    </div>
-                    <a class="project-link" href="https://tanmayboss25.github.io/Tunezy/" target="_blank"
-                        rel="noopener">View live →</a>
-                </div> -->
 
 
 
@@ -287,19 +401,20 @@
                 </div>
                 <div class="project-card reveal">
                     <div class="project-icon">🔢</div>
-                    <div class="project-name">Binary Language Converter  </div>
-                    <div class="project-desc">A web Which can change Human Language to Machine Language and Vice versa. </div>
+                    <div class="project-name">Binary Language Converter </div>
+                    <div class="project-desc">A web Which can change Human Language to Machine Language and Vice versa.
+                    </div>
                     <div class="project-tags">
                         <span class="project-tag">HTML</span>
                         <span class="project-tag">CSS</span>
                         <span class="project-tag">JavaScript</span>
                         <span class="project-tag">GitHub Pages</span>
                     </div>
-                    <a class="project-link" href="https://tanmayboss25.github.io/Binary-Language-Converter-/" target="_blank"
-                        rel="noopener">View live →</a>
+                    <a class="project-link" href="https://tanmayboss25.github.io/Binary-Language-Converter-/"
+                        target="_blank" rel="noopener">View live →</a>
                 </div>
 
-                <div class="project-card reveal" style="border-style: dashed; opacity: 0.7;">
+                <div class="project-card reveal project-card--upcoming">
                     <div class="project-icon">🚀</div>
                     <div class="project-name">Next Project</div>
                     <div class="project-desc">Something exciting is in the works. Stay tuned — great things take time to
@@ -366,9 +481,9 @@
                             target="_blank" rel="noopener" class="social-link">
                             <span class="social-icon">🙎</span>Linkedin
                         </a>
-                        <a href="https://youtube.com/@tanmayboss25?si=6v07IJejQX_wNXrx"
-                            target="_blank" rel="noopener" class="social-link">
-                            <span class="social-icon">▶️</span>My Gaming Youtube Channel- old 
+                        <a href="https://youtube.com/@tanmayboss25?si=6v07IJejQX_wNXrx" target="_blank" rel="noopener"
+                            class="social-link">
+                            <span class="social-icon">▶️</span>My Gaming Youtube Channel- old
                         </a>
                     </div>
                 </div>
@@ -393,7 +508,7 @@
                             <textarea id="message" name="message" placeholder="Write your message here..."
                                 required></textarea>
                         </div>
-                        <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Send
+                        <button type="submit" class="btn-primary btn-submit">Send
                             Message ↗</button>
                         <p class="form-status" id="form-status"></p>
                     </form>
@@ -404,10 +519,10 @@
 
     <!-- FOOTER -->
     <footer>
-        <p>Built by <a href="#">Tanmay Dalabhanjan</a> · 2026 · Frontend web developer</p>
+        <p>Built by <a href="#">Tanmay Dalabhanjan</a> · 2026 · Vibe Coder</p>
     </footer>
 
-    <script src="Script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
