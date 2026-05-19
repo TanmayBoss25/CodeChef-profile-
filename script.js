@@ -138,7 +138,7 @@ const skills = [
     { name: "C / C++", pct: 30, note: "DSA & Problem Solving" },
     { name: "HTML & CSS", pct: 80, note: "Layouts, Animations, Responsive" },
     { name: "JavaScript", pct: 50, note: "DOM, APIs, Logic" },
-    { name: "React", pct: 20, note: "Component-Based Architecture, State Management" },
+    { name: "React", pct: 0, note: "Component-Based Architecture, State Management" },
     { name: "Git & GitHub", pct: 80, note: "Version Control, Pages" },
     { name: "AI Tools", pct: 90, note: "Prompt Engineering, Productivity" },
 ];
