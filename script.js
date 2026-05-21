@@ -138,8 +138,8 @@ const skills = [
     { name: "C / C++", pct: 30, note: "DSA & Problem Solving" },
     { name: "HTML & CSS", pct: 80, note: "Layouts, Animations, Responsive" },
     { name: "JavaScript", pct: 50, note: "DOM, APIs, Logic" },
-    { name: "React", pct: 0, note: "Component-Based Architecture, State Management" },
-    { name: "Git & GitHub", pct: 80, note: "Version Control, Pages" },
+    { name: "React", pct: 0 ( learning ) , note: "Component-Based Architecture, State Management" },
+    { name: "GitHub", pct: 80, note: "Pages" },
     { name: "AI Tools", pct: 90, note: "Prompt Engineering, Productivity" },
 ];
 const grid = document.getElementById('skills-grid');
