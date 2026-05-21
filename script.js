@@ -135,10 +135,9 @@ type();
 
 /* ── SKILLS DATA ──────────────────────── */
 const skills = [
-    { name: "C / C++", pct: 30, note: "DSA & Problem Solving" },
+    { name: "C / C++", pct: 30, note: "Basics" },
     { name: "HTML & CSS", pct: 80, note: "Layouts, Animations, Responsive" },
-    { name: "JavaScript", pct: 50, note: "DOM, APIs, Logic" },
-    { name: "React", pct: 0 , note: "Component-Based Architecture, State Management" },
+    { name: "JavaScript", pct: 50, note: "functions , DOM , Objs" },
     { name: "GitHub", pct: 80, note: "Pages" },
     { name: "AI Tools", pct: 90, note: "Prompt Engineering, Productivity" },
 ];
